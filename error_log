@@ -1,0 +1,19 @@
+[28-Apr-2022 16:37:08 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/webcreat/public_html/dev/myphp/index2.php on line 4
+[28-Apr-2022 16:37:08 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/webcreat/public_html/dev/myphp/index2.php on line 4
+[28-Apr-2022 16:37:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/webcreat/public_html/dev/myphp/index2.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/webcreat/public_html/dev/myphp/index2.php on line 53
+[28-Apr-2022 16:37:56 UTC] PHP Warning:  include_once(config.php): failed to open stream: No such file or directory in /home/webcreat/public_html/dev/myphp/index2.php on line 4
+[28-Apr-2022 16:37:56 UTC] PHP Warning:  include_once(): Failed opening 'config.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/webcreat/public_html/dev/myphp/index2.php on line 4
+[28-Apr-2022 16:37:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/webcreat/public_html/dev/myphp/index2.php:53
+Stack trace:
+#0 {main}
+  thrown in /home/webcreat/public_html/dev/myphp/index2.php on line 53
+[29-Apr-2022 03:15:17 UTC] PHP Warning:  mysqli::query(): Empty query in /home/webcreat/public_html/dev/myphp/index2.php on line 61
+[29-Apr-2022 03:36:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/webcreat/public_html/dev/myphp/generic.php:54
+Stack trace:
+#0 {main}
+  thrown in /home/webcreat/public_html/dev/myphp/generic.php on line 54
+[29-Apr-2022 10:06:56 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/webcreat/public_html/dev/myphp/index2.php on line 82
+[29-Apr-2022 10:06:59 UTC] PHP Parse error:  syntax error, unexpected 's' (T_STRING), expecting ']' in /home/webcreat/public_html/dev/myphp/index2.php on line 82

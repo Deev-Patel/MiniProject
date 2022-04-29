@@ -1,0 +1,185 @@
+<?php 
+include 'admin/dist/config.php';
+
+
+?>
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>PERSONAL WEBSITE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo">PERSONAL INFORMATION</a>
+									<ul class="icons">
+										
+										<li><a href="https://www.facebook.com/deev.patel.754/" class="icon brands fa-facebook-f" style="color:#3b5998"><span class="label">Facebook</span></a></li>
+										
+										<li><a href="https://www.instagram.com/deev_patel13/" class="icon brands fa-instagram" style="color:#E1306C"><span class="label">Instagram</span></a></li>
+										
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hello Guys !!</h1>																						<?php																						$resultwelcome = $conn -> query("SELECT * FROM myusers ORDER BY id DESC LIMIT 1;");$rowwelcome = $resultwelcome -> fetch_row();											?>
+											<p>My name is <?php echo $rowwelcome[2]; ?> and will be telling you about myself.</p>
+										</header>
+
+										<p>Hey Guys, My name is Deev Patel and I am a student. I am studying in second year of BTECH at KJ Somaiaya College of Engineering, Vidyavihar, Ghatkopar, Mumbai, Maharashtra.I have good communicational skills that help me to communicate to others efficiently.I am eager to grow my skills in IT and also want to learn new things everyday. I am very Passionate about creating a change in th world using technology as a medium. I am also interested  in web developement and also have knowledge about various other coding languages. </p>
+										
+									</div>
+									<span class="image object">
+										<img src="images/own1.jpeg" alt="" />
+									</span>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>LANGUAGES I KNOW</h2>
+									</header>
+									<?php
+									
+								
+								
+		  $result = $conn -> query ("SELECT * from myusers");
+		   //$folder = getcwd()."/admin/dist/myimage/";		   
+		  // print_r($folder);		  ?>		  <div class="features"><?php
+while($row = $result -> fetch_row())
+{
+
+                    
+									?>																																																								<article>											<!--<img src="admin/dist/myimage/<?php echo $row[1]; ?>" height="80" alt=""></span>-->											<div class="content">												<h3><?php echo $row[4]; ?></h3>																							</div>										</article>
+									
+										
+										
+										<?php } ?>
+									
+										
+									
+										
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>EDUCATION</h2>
+									</header>
+										<article>
+										<div class="content">
+										    
+										    	<?php
+									
+								
+								
+		  $result = $conn -> query ("SELECT * from myusers");
+while($row = $result -> fetch_row())
+{
+
+                    
+									?>
+										
+										<p><i>Percentage: <?php echo $row[5]; ?>%</i></p>
+										
+										<?php } ?>
+									</div>
+									</article>
+									<br><br>
+									<article>
+										<div class="content">
+									
+										<p><b>Diploma in IT</b> </p>
+											<?php
+									
+								
+								
+		  $result = $conn -> query ("SELECT * from myusers");
+while($row = $result -> fetch_row())
+{
+
+                    
+									?>
+										<p><i>  Percentage: <?php echo $row[6]; ?>% </i></p>
+										
+											<?php } ?>
+									
+									</div>
+									</article>
+								</section>
+								
+						
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index2.php">Homepage</a></li>
+										<li><a href="generic.php">Generic</a></li>
+										
+										
+										
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>You can get in touch with me by any social media plaforms and also contact through the following.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="mailto:deevpatel6@gmail.com">DEEVPATEL16@GMAIL.COM</a></li>
+										<li class="icon solid fa-phone"><a href="tel:+919004129606"> +91 9004129606</a></li>
+										<li  class="icon solid fa-home"><a href="https://goo.gl/maps/NtiX9DbFjwPPH1fZ6" target="_blank"> F/11,PATEL SOCIETY,<br />VILE PARLE
+											<br />MUMBAI,MAHARASHTRA,INDIA</a></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
